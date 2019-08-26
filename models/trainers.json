@@ -1,0 +1,21 @@
+{
+  "trainerCollection": [
+    {
+      "id": "1",
+      "name": "Homer Simspon",
+      "gender": "M",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "address": "bally"
+    },
+    {
+      "id": "2",
+      "name": "Marge Simpson",
+      "gender": "F",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "address": "Ballinaberna, Ballywilliam"
+      
+    }
+  ]
+}

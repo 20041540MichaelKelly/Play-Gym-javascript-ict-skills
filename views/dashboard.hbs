@@ -1,0 +1,14 @@
+{{> trainerMenu id="dashboard"}}
+
+{{#each memberlist}}
+<section class="ui segment">
+   <h2 class="ui header">
+      {{name}}
+   </h2>
+   <a href="/trainerlist/{{id}}" class="ui icon button"> <i class="icon folder open"></i></a>
+   <a href="/trainerlist/deletememberlist/{{id}}" class="ui icon button">
+   <i class="icon trash"></i></a>
+</section>
+{{/each}}
+
+

@@ -1,0 +1,41 @@
+{{> menu id="settings"}}
+
+<div class="ui two column grid basic middle aligned segment">
+    <div class="column">
+        <form class="ui stacked segment form" action="/updatemember" method="POST">
+            <h3 class="ui header">Update Information</h3>
+            <div class="two fields">
+                <div class="field">
+                    <label>Name</label>
+                    <input placeholder="Name" type="text" name="name" required>
+                </div>
+                <div class="field">
+                    <label>Gender</label>
+                    <input placeholder="Gender" type="text" name="gender" required>
+                </div>
+            </div>    
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="field">
+                <label>Address</label>
+                <input placeholder="Address" type="text" name="address" required>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Height</label>
+                    <input placeholder="Height" type="number" step="any" min="0" name="height" required>
+                </div>
+                <div class="field">
+                    <label>Starting Weight</label>
+                    <input placeholder="Starting Weight" type="number" step="any" min="0" name="startingWeight" required>
+                 </div>
+            </div>
+            <button class="ui blue submit button">Submit</button>
+        </form>
+    </div>
+    <div class="column">
+        <img class="ui image" src="https://cdn.glitch.com/dfd5d411-7136-4f92-b076-7e2cc1714fcd%2Fpen.jpg?v=1566395127751">
+    </div>
+</div>
