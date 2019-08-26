@@ -1,0 +1,128 @@
+{{> trainerMenu id="trainerlist"}}
+
+<section class="ui segment">
+  <table class="ui fixed table">
+    <thead>
+    <tr>
+      <th>
+        <div class="ui statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="user icon"></i>
+            </div>
+            <div class="label">
+            {{trainerlist.name}}
+              
+            </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="ui statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="heartbeat icon"></i>
+<!--               in java i created the method and called it like, member.getBmi(); -->
+               
+            </div>
+            <div class="label">
+              {{bmi}}
+              BMI
+            </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="ui statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="doctor icon"></i>
+            </div>
+            <div class="label">
+            {{weightClass}}
+            </div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="ui statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="{{idealBodyWeight}}"></i>
+            </div>
+            <div class="label">
+              Ideal Body Weight Indicator
+            </div>
+          </div>
+        </div>
+      </th>
+      </tr>
+    </thead>
+  </table>
+</section>
+{{#each trainerlist.assessments}}
+
+<section class="ui raised segment">
+    <table class="ui fixed table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Comment</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+            {{date}}
+            </td>
+            <td>
+            {{weight}}
+            </td>
+            <td>
+            {{chest}}
+            </td>
+            <td>
+            {{thigh}}
+            </td>
+            <td>
+            {{upperArm}}
+            </td>
+            <td>
+            {{waist}}
+            </td>
+            <td>
+            {{hips}}
+            </td>
+            <td>
+            {{comment}}
+            </td>
+            <td>  
+          <a href="/trainerlist/{{../trainerlist.id}}/deleteassessment/{{id}}" class="ui tiny red button">
+          <i class="icon trash"></i></a>
+        
+            </td>
+            
+        </tr>
+        <tr>
+            <td colspan="7">
+                <form class="ui  form" action="/trainerlist/{{../trainerlist.id}}/addcomment/{{id}}" method="POST">
+                    <div class="field">
+                        <label>Comments</label>
+                        <input placeholder="" type="text" name="comment">
+                    </div>
+                    <button class="ui blue submit button">Update</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  {{/each}}
+</section>
+

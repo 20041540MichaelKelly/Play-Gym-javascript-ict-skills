@@ -1,0 +1,143 @@
+{
+  "memberCollection": [
+    {
+      "id": "a9807b89-406e-449b-81fd-c5841a49a597",
+      "name": "Helen Kelly",
+      "gender": "F",
+      "email": "helen@kelly.com",
+      "password": "secret",
+      "address": "Ballinaberna, Ballywilliam",
+      "height": "1.9",
+      "startingWeight": "70",
+      "assessments": [
+        {
+          "id": "bc02506a-f756-4d69-ab61-b1bc2c6d9aab",
+          "weight": "100",
+          "chest": "32",
+          "thigh": "45",
+          "upperArm": "23",
+          "waist": "23",
+          "hips": "26",
+          "date": "8/26/2019 19:02:06"
+        },
+        {
+          "id": "82e71674-4e0d-404d-b66c-3f4dd2f7534b",
+          "weight": "95",
+          "chest": "33",
+          "thigh": "46",
+          "upperArm": "24",
+          "waist": "38",
+          "hips": "27",
+          "trend": "ui red tag label",
+          "date": "8/26/2019 19:02:36",
+          "comment": "Very good"
+        },
+        {
+          "id": "0ee0d28d-ba23-4579-bfc2-84d31881efbc",
+          "weight": "82",
+          "chest": "42",
+          "thigh": "25",
+          "upperArm": "26",
+          "waist": "34",
+          "hips": "28",
+          "trend": "ui green tag label",
+          "date": "8/26/2019 19:03:06",
+          "comment": "getting there"
+        }
+      ]
+    },
+    {
+      "id": "60499464-c706-4bba-b9a5-c6577b71d658",
+      "name": "Michael Kelly",
+      "gender": "M",
+      "email": "mikelly1988@gmail.com",
+      "password": "secret",
+      "address": "Ballinaberna, Ballywilliam",
+      "height": "2.1",
+      "startingWeight": "110",
+      "assessments": [
+        {
+          "id": "ed716635-9e15-41ab-b1b4-7c38486728e0",
+          "weight": "89",
+          "chest": "35",
+          "thigh": "24",
+          "upperArm": "28",
+          "waist": "35",
+          "hips": "36",
+          "date": "8/26/2019 19:04:48",
+          "comment": "you need to do better"
+        },
+        {
+          "id": "e8ee70ce-b968-436f-a4b3-1aad97f2e405",
+          "weight": "90",
+          "chest": "36",
+          "thigh": "35",
+          "upperArm": "29",
+          "waist": "27",
+          "hips": "38",
+          "trend": "ui red tag label",
+          "date": "8/26/2019 19:05:11"
+        },
+        {
+          "id": "55e60553-46a9-4b21-8687-06e8a38d5cc5",
+          "weight": "77",
+          "chest": "40",
+          "thigh": "35",
+          "upperArm": "39",
+          "waist": "38",
+          "hips": "44",
+          "trend": "ui green tag label",
+          "date": "8/26/2019 19:05:31",
+          "comment": "well done"
+        }
+      ],
+      "comment": "hi"
+    },
+    {
+      "id": "7c5a950b-d8dd-4e04-bdd5-c7f322d89012",
+      "name": "Sarah Kearns",
+      "gender": "F",
+      "email": "sarah@kearns.com",
+      "password": "secret",
+      "address": "Ferns",
+      "height": "1.3",
+      "startingWeight": "55",
+      "assessments": [
+        {
+          "id": "dd5e55c4-bd6d-45fa-b766-ec0252607b0f",
+          "weight": "45",
+          "chest": "33",
+          "thigh": "27",
+          "upperArm": "44",
+          "waist": "48",
+          "hips": "49",
+          "trend": "ui red tag label",
+          "date": "8/26/2019 19:06:34"
+        },
+        {
+          "id": "a783a74e-c4cf-4bbd-b2af-5f2ac80d356b",
+          "weight": "33",
+          "chest": "28",
+          "thigh": "29",
+          "upperArm": "44",
+          "waist": "45",
+          "hips": "46",
+          "trend": "ui green tag label",
+          "date": "8/26/2019 19:07:00",
+          "comment": "Very good"
+        },
+        {
+          "id": "016e93b9-062c-41b1-9c52-00f8770eb2e4",
+          "weight": "73",
+          "chest": "45",
+          "thigh": "53",
+          "upperArm": "82",
+          "waist": "26",
+          "hips": "19",
+          "trend": "ui red tag label",
+          "date": "8/26/2019 19:46:13"
+        }
+      ]
+    }
+  ]
+}

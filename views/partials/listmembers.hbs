@@ -1,0 +1,136 @@
+<section class="ui segment">
+   <table class="ui fixed table">
+      <thead>
+         <tr>
+            <th>
+               <div class="ui statistics">
+                  <div class="statistic">
+                     <div class="value">
+                        <i class="user icon"></i>
+                     </div>
+                     <div class="label">
+                        {{memberlist.name}} 
+                     </div>
+                  </div>
+               </div>
+            </th>
+            <th>
+               <div class="ui statistics">
+                  <div class="statistic">
+                     <div class="value">
+                        <i class="heartbeat icon"></i>
+                     </div>
+                     <div class="label">
+                        {{bmi}}
+                        BMI
+                     </div>
+                  </div>
+               </div>
+            </th>
+            <th>
+               <div class="ui statistics">
+                  <div class="statistic">
+                     <div class="value">
+                        <i class="doctor icon"></i>
+                     </div>
+                     <div class="label">
+                        {{weightClass}}
+                     </div>
+                  </div>
+               </div>
+            </th>
+            <th>
+               <div class="ui statistics">
+                  <div class="statistic">
+                     <div class="value">
+                        <i class="{{idealBodyWeight}}"></i>
+                     </div>
+                     <div class="label">
+                        Ideal Body Weight Indicator
+                     </div>
+                  </div>
+               </div>
+            </th>
+         </tr>
+      </thead>
+   </table>
+</section>
+<form class="ui segment form" action="/memberlist/{{memberlist.id}}/addassessment" method="POST">
+   <div class="three fields">
+      <div class="field">
+         <label>Weight</label>
+         <input placeholder="00.00kg" type="number" step="any" min="0" name="weight">
+      </div>
+      <div class="field">
+         <label>Chest</label>
+         <input placeholder="00.00cm" type="number" step="any" min="0" name="chest">
+      </div>
+      <div class="field">
+         <label>Thigh</label>
+         <input placeholder="00.00cm" type="number" step="any" min="0" name="thigh">
+      </div>
+   </div>
+   <div class="three fields">
+      <div class="field">
+         <label>Upper Arm</label>
+         <input placeholder="00.00cm" type="number" step="any" min="0" name="upperArm">
+      </div>
+      <div class="field">
+         <label>Waist</label>
+         <input placeholder="00.00cm" type="number" step="any" min="0" name="waist">
+      </div>
+      <div class="field">
+         <label>Hips</label>
+         <input placeholder="00.00cm" type="number" step="any" min="0" name="hips">
+      </div>
+   </div>
+   <button class="ui blue submit button">Add Assessment</button>
+</form>
+<table class="ui table">
+   <thead>
+      <tr>
+         <th>Date</th>
+         <th>Weight</th>
+         <th>Chest</th>
+         <th>Thigh</th>
+         <th>Upper Arm</th>
+         <th>Waist</th>
+         <th>Hips</th>
+         <th>Trend</th>
+         <th>comment</th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      {{#each memberlist.assessments}}
+      <tr>
+         <td>{{date}}</td>
+         <td>{{weight}}
+         </td>
+         <td> {{chest}}   
+         </td>
+         <td> {{thigh}}
+         </td>
+         <td> {{upperArm}}
+         </td>
+         <td> {{waist}}
+         </td>
+         <td> {{hips}}
+         </td>
+         <td> 
+            <a class="{{trend}}"></a>
+         </td>
+         <td>     
+            {{comment}}
+         </td>
+         <td>
+            <a href="/memberlist/{{../memberlist.id}}/deleteassessment/{{id}}" class="ui tiny red button">Delete
+            <i class="icon trash"></i></a>
+         </td>
+      </tr>
+      {{/each}}  
+   </tbody>
+</table>
+
+
+
